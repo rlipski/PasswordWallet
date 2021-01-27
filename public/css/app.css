@@ -19,7 +19,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 50%;
 }
 
 /* The Close Button */
@@ -35,4 +35,21 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.table-passwords {
+  border-collapse: collapse;
+ }
+
+/* .table-passwords td + td,
+.table-passwords th + th {
+  border-left: 1px outset lightblue;
+ } */
+.table-passwords tr + tr {
+  border-top: 1px outset lightblue;
+}
+.table-passwords td,
+.table-passwords th {
+  padding: 5px;
 }

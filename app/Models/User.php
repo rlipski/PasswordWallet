@@ -20,6 +20,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'salt',
+        'is_password_kept_as_hash',
     ];
 
     /**
@@ -40,4 +42,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+      public function passwords()
+    {
+        return $this->hasMany(Password::class, 'user_id');
+    }
 }
